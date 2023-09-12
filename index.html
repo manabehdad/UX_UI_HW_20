@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").hover(function () {
+          $("#panel").slideDown("slow");
+          $("#panel2").slideDown("slow");
+        });
+        $("#dropdown").mouseleave(function () {
+          $("#panel").slideUp("slow");
+          $("#panel2").slideUp("slow");
+        });
+      });
+    </script>
+    <style>
+      #panel,
+      #flip,
+      #panel2 {
+        justify-content: flex-start;
+        display: flex;
+      }
+      #panel {
+        padding: 10px;
+        display: none;
+        color: rgb(80, 163, 111);
+        cursor: pointer;
+      }
+      #panel2 {
+        padding: 10px;
+        display: none;
+        color: rgb(80, 163, 111);
+        cursor: pointer;
+      }
+    </style>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="name" id="section1">
+        <img class="logo" src="./images/logo.png" />
+        <ul class="mana">
+          MANA BEHDAD
+        </ul>
+      </div>
+      <nav class="navBar">
+        <a href="work.html" class="nav" id="flip">WORK</a>
+        <a href="index.html" class="nav" style="color: rgb(80, 163, 111)"
+          >ABOUT</a
+        >
+        <a href="skills.html" class="nav">SKILLS</a>
+        <a
+          href="https://drive.google.com/file/d/1Jpzj-ADbQW_LdOHnaRvutvGBCtIOjtPz/view?usp=sharing"
+          class="nav"
+          >RESUME</a
+        >
+        <div id="dropdown" class="hide">
+          <a id="panel">Case Study One</a>
+          <a id="panel2">Case Study Two</a>
+        </div>
+      </nav>
+    </header>
+    <div id="flex">
+      <section class="leftSection">
+        <h2>Hi, I'm Mana</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Ultricies
+          <span class="green-text">sapien ante volutpat</span> non lacus. Amet
+          nunc justo blandit ultricies purus morbi aenean. Lorem ipsum dolor sit
+          amet consectetur. Ultricies amet sapien ante volutpat non lacus. Amet
+          nunc justo blandit
+          <span class="green-text">sit amet consectetur</span> ultricies purus
+          morbi aenean. Ultricies amet sapien ante volutpat non lacus. Amet nunc
+          justo blandit ultricies purus morbi aenean. Lorem ipsum
+          <span class="green-text"> sit amet consectetur</span>.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet
+          <span class="green-text">sit amet consectetur</span>consectetur.
+          Ultricies amet sapien ante volutpat non lacus. Amet nunc justo blandit
+          ultricies purus morbi aenean. Lorem ipsum dolor sit amet consectetur.
+          Ultricies amet sapien
+          <span class="green-text">sit amet consectetur</span>ante volutpat non
+          lacus. Amet nunc justo blandit ultricies purus morbi aenean.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/1Jpzj-ADbQW_LdOHnaRvutvGBCtIOjtPz/view?usp=sharing"
+        >
+          <button>Resume</button>
+        </a>
+      </section>
+      <section class="rightSection">
+        <img src="./images/profile pic.png" />
+      </section>
+    </div>
+    <div class="container">
+      <h1 class="header">Architectural Sketches</h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet sapien ante volutpat non lacus.
+      </p>
+    </div>
+    <div class="image-container">
+      <img src="./images/sk1.png" alt="sk1" />
+      <img src="./images/sk2.png" alt="sk2" />
+      <img src="./images/sk3.png" alt="sk3" />
+      <img src="./images/sk4.png" alt="sk4" />
+      <img src="./images/sk5.png" alt="sk5" />
+      <img src="./images/sk6.png" alt="sk6" />
+    </div>
+    <!-- </div> -->
+    <div class="container">
+      <h1 class="header">Photography</h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet sapien ante volutpat non lacus.
+      </p>
+    </div>
+    <div class="image-container">
+      <img src="./images/photo1.png" />
+      <img src="./images/photo2.png" />
+      <img src="./images/photo3.png" />
+      <img src="./images/photo4.png" />
+      <img src="./images/photo5.png" />
+      <img src="./images/photo6.png" />
+    </div>
+    <div class="bottom-container">
+      <div class="text-container">
+        <h1 class="header">Let's Get In Touch</h1>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et
+          felis aliquet, tincidunt nisi eu, tincidunt ligula.
+        </p>
+      </div>
+      <button class="low-button">Let's Connect</button>
+    </div>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/manabehdad">GITHUB</a>
+        <a href="mailto:recipient@example.com">EMAIL</a>
+        <a href="https://www.linkedin.com/jobs/">LINKEDIN</a>
+      </div>
+    </div>
+    <p class="email">mana.behdad@gmail.com</p>
+    <p class="copy-right">Mana Behdad (c) All Rights Reserved</p>
+    <section id="section2">
+      <a href="#section1"><img src="./images/arrow.jpg" /></a>
+    </section>
+  </body>
+</html>

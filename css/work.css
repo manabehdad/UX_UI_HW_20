@@ -1,0 +1,136 @@
+* {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo{
+    height: 30px;
+    width: 50px;
+    margin-left: 30px;
+}
+.navBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding-right: 200px;
+    margin-top: -60px;
+}
+.navBar:hover {
+    color: rgb(80, 163, 111);
+}
+.nav{
+    margin: 21px;
+    text-decoration: none;
+}
+.nav:hover {
+    color: rgb(80, 163, 111);
+}
+.mana {
+    font-size: 25px;
+}
+.green-text {
+    color: rgb(80, 163, 111);
+    font-weight: bolder;
+}
+.section {
+    background-image: url("../images/header.background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    background-position: center bottom;
+    padding: 10px 0;
+}
+header h1 {
+    margin-left: 30px;
+    max-width: 580px;
+    font-size: 39px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+}
+.container {
+    max-width: 600px;
+    margin-left: 30px;
+    margin-bottom: 200px;
+}
+.container p {
+    text-align: left;
+}
+.cs1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    overflow: hidden;
+}
+.cs1 img {
+    width: 1200px;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+}
+.cs1:hover {
+    filter: grayscale(100%) brightness(2.6);
+}
+.cs2 {
+    font-size: 30px;
+    margin-left: 105px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.cs2:hover {
+    color: rgb(80, 163, 111);
+}
+.text-overlay {
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black; !important 
+    display: none; 
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: 150px;
+    margin-top: 350px;
+    display: flex; 
+    transition: opacity 0.3s ease-in-out; 
+}
+.cs1:hover .text-overlay {
+    display: flex;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.footer a {
+    text-decoration: none;
+    margin: 0 15x;
+}
+.email {
+    display: flex;
+    font-size: 14px;
+    color: black;
+
+}
+.copy-right {
+    display: flex;
+    font-size: 14px;
+    margin-left: 600px;
+}
